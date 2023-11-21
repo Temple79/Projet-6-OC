@@ -1,11 +1,14 @@
 
 import logo from '../assets/Logos/logo_white.png'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     const year = new Date().getFullYear()
     return (
         <footer className='footer'>
-            <img className='footer_logo' src={logo} alt="Logo de Kasa"/> 
+            <Link to="/">
+                <img className='footer_logo' src={logo} alt="Logo de Kasa"/> 
+            </Link>
             <div className='footer_text'>
                 &#169; {year} Kasa. All rights reserved
         </div>
