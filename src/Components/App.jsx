@@ -1,7 +1,7 @@
 
 import Home from "../page/Home"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import data from "../assets/logements.json"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 
 function App() {
