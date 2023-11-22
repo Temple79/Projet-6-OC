@@ -1,10 +1,14 @@
-
+import Card from './Card'
 
 function Cards(props) {
+
     return (
-        <article className="cards" style={{ backgroundImage: `url(${props.data.cover})` }}>
-            <h2>{props.data.title}</h2>
-        </article>
+        <main className="cards">
+            {props.datas.map((data)=> (
+                <Card key={data.id} data={data} />
+            ))}
+         </main>
+
     )
 }
 
