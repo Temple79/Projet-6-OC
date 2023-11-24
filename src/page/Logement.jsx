@@ -1,26 +1,21 @@
 
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
+import Error from './Error'
+import { useParams } from 'react-router-dom'
+
 
 function Logement(props) {
-
-    //récupérer l'id par rapport à l'URL
-
-    // rechercher si cette id est dans le fichier logement.json
-
-    //si non présent, appel de la page 404
-
-    
+    let {id} = useParams()
+    let data = props.data.find((data) => data.id === id)
+    if (!data) {
+        return <Error />
+    }
     return (
-        <>
-            <Header></Header>
-
-            <main>
-                Ma page d'erreur
-            </main>
-            <Footer></Footer>
-        </>
+        <main className='main_logements'>
+        </main>
     )
 }
+
 
 export default Logement

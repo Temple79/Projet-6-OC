@@ -1,16 +1,16 @@
 
 import Header from '../Components/Header'
 import Banner from '../Components/Banner'
-import banner from '../assets/Images/banner.png'
+import Banner_About from '../assets/Images/about.png'
 import Footer from '../Components/Footer'
 
 function About(props) {
     return (
         <>
             <Header></Header>
-            <Banner className="banner-home" image={banner} alt="Paysage montagne et rivière">
-                <h1>About</h1>
+            <Banner className="banner-about" image={Banner_About} alt="Paysage montagnes et forêts">
             </Banner>
+            
             <Footer></Footer>
         </>
     )
