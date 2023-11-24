@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 function Card(props) {
     return (
-        <Link  to="/">
+        <Link to={`../logement/${props.data.id}`}>
             <article className="card" style={{ backgroundImage: `url(${props.data.cover})` }}>
                 <div className="card__content">
                     <div className="card__title">
