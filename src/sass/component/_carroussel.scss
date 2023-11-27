@@ -1,0 +1,65 @@
+.carousel {
+    width: 100%;
+    max-width: 1240px;
+    height: 415px;
+    position: relative;
+    margin-bottom: 32px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.gallery {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.4s ease-in;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__hidden {
+        opacity: 0.7;
+    }
+}
+
+.compteur {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    left: 50%;
+    bottom: 0;
+    margin-bottom: 16px;
+}
+.btn__prev {
+    position: absolute;
+    background: none;
+    padding: 10px;
+    border: none;
+    z-index: 10px;
+    cursor: pointer;
+    top: 40%;
+    left: 0;
+    
+    img {
+        transform: rotate(90deg);
+        height: 48px;
+    }
+}
+
+.btn__next {
+    position: absolute;
+    background: none;
+    padding: 10px;
+    border: none;
+    z-index: 10px;
+    cursor: pointer;
+    top: 40%;
+    right: 0;
+
+    img {
+        transform: rotate(-90deg);
+        height: 48px;
+    }
+}

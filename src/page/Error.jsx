@@ -7,10 +7,10 @@ function Error(props) {
     return (
         <>
             <Header></Header>
-            <main>
+            <main className='error'>
                 <h1>404</h1>
                 <p>Oups! La page que vous demandez n'existe pas.</p>
-                <div className='error_back'>
+                <div className='error__back'>
                     <Link to="/">Retournez sur la page d'acceuil</Link>
                 </div>
             </main>

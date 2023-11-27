@@ -9,7 +9,7 @@ function About() {
     <>
       <Header></Header>
       <Banner
-        className="banner-about"
+        className="banner__about"
         image={Banner_About}
         alt="Paysage montagnes et forêts"
       ></Banner>
