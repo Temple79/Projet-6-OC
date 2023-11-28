@@ -9,7 +9,7 @@ function Home(props) {
     return (
         <>
             <Header></Header>
-            <Banner className="banner__home" image={banner} alt="Paysage montagne et rivière">
+            <Banner className="banner banner__home" image={banner} alt="Paysage montagne et rivière">
                 <h1>Chez vous, partout et ailleurs</h1>
             </Banner>
             <Cards datas={props.data}></Cards>

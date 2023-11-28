@@ -1,9 +1,14 @@
 @import "./global/global";
+@import "./utils/variable";
 @import "./component/header";
+@import "./component/main";
 @import "./component/footer";
 @import "./component/cards";
 @import "./component/card";
 @import "./component/banner";
-@import "./component/error";
+@import "./pages/error";
 @import "./component/dropdown";
-@import "./component/_carroussel.scss"
+@import "./component/rate";
+@import "./component/_carroussel";
+@import "./pages/logement";
+@import "./component/tag"
