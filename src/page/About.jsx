@@ -13,7 +13,7 @@ function About() {
         image={Banner_About}
         alt="Paysage montagnes et forêts"
       ></Banner>
-      <div className="about">
+      <main className="about">
         <Dropdown
           title="Fiabilité"
           content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations son régulièrement vérifiées par nos equipes"
@@ -32,7 +32,7 @@ function About() {
           title="Sécurité"
           content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
         />
-      </div>
+      </main>
       <Footer></Footer>
     </>
   );

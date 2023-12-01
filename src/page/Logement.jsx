@@ -20,11 +20,16 @@ function Logement(props) {
       <main>
         <Carroussel pictures={data.pictures} />
         <div className="logement__wrap">
-          <div className="logement__wrap__headers">
-            <div>
-            <h2 className="logement__title">{data.title}</h2>
-            <p className="logement__location">{data.location}</p>
+          <div  className="logement__wrap1">
+            <div className="logement__wrap__headers">
+              <h2 className="logement__title">{data.title}</h2>
+              <p className="logement__location">{data.location}</p>
             </div>
+            <div className="logement__wrap__info">
+              <Tags data={data.tags} />
+            </div>
+          </div>
+          <div  className="logement__wrap2">
             <div className="logement__host">
               <p className="logement__host__name">{data.host.name}</p>
               <img
@@ -33,9 +38,6 @@ function Logement(props) {
                 alt="Photographie de l'hôte"
               ></img>
             </div>
-          </div>
-          <div className="logement__wrap__info">
-            <Tags data={data.tags} />
             <div className="logement__rating">
               <Rate props={data.rating} />
             </div>

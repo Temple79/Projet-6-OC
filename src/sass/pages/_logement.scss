@@ -1,18 +1,14 @@
 .logement__wrap {
+  display: flex;
+  width: auto;
+  color: $primary-color;
+  justify-content: space-between ;
+  &__headers {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    width: 100%;
-    color: $primary-color;
+  }
 
-    &__headers {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 }
 
 .logement__title {
@@ -22,9 +18,9 @@
 }
 
 .logement__location {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
 .logement__host {
   display: flex;
@@ -72,4 +68,29 @@
       font-size: 20px;
     }
   }
+}
+
+
+@media (max-width: 767px) {
+
+  .logement__content  {
+    flex-direction: column;
+  }
+
+  .logement__wrap {
+    flex-direction: column;
+
+  }
+  .logement__wrap2 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .logement__wrap__headers{
+
+    padding-bottom: 20px;
+  }
+
+
 }

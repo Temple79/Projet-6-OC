@@ -4,3 +4,12 @@
         color:$secondary-color;
     }
 }
+
+@media (max-width: 767px) {
+    .star{
+        font-size: 30px;
+        &--empty {
+            font-size: 30px;
+        }
+    }
+}

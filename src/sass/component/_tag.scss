@@ -1,8 +1,7 @@
 .tags {
     display: flex;
-    max-height: 30px;
     gap: 10px;
-
+    flex-wrap: wrap;
 }
 
 .tag {

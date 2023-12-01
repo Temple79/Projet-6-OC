@@ -13,7 +13,7 @@ function Header() {
                 Accueil
             </NavLink>
             <NavLink to="/about" className={({isActive})=> isActive?"nav nav__active":"nav"}>
-                A Propos
+                A&nbsp;Propos
             </NavLink>
             </nav>
         </header>
